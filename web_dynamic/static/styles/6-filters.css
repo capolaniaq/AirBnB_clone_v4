@@ -80,6 +80,7 @@ button:hover {
 
 .locations .popover {
     margin-top: 0%;
+    margin-left: -1px;
 }
 .popover ul {
     list-style-type: none;
@@ -104,4 +105,18 @@ button:hover {
 
 .chk_amenity {
     margin-right: 10px;
+}
+
+.amenities_list {
+    margin-top: 0;
+    margin-left: 15%;
+    width: 100%;
+}
+
+.amenities_list > h4 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 20px;
+    margin: 0 0 15px 0;
 }
