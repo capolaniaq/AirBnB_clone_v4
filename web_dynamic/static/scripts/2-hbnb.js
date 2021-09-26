@@ -1,10 +1,10 @@
 $(document).ready(function () {
-    const url = "http://0.0.0.0:5001/api/v1/status/"
+    const url = "http://localhost:5001/api/v1/status/"
     let i = 0;
     let a_list = [];
 
-    $.get(url, function (data, statusText, xhr) {
-      if (xhr.status === 200) {
+    $.get(url, function (data) {
+      if (data.status === 'OK') {
         $("#api_status").addClass("available");
       } else {
         $("#api_status").removeClass("available");
